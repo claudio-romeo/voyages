@@ -216,33 +216,49 @@ box-shadow: 1px 5px 21px 13px #000000;
     background-color: #f8f8f8;
     padding: 10px 2%;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 #miyajima {
     background: url('https://www.sigarch.org/wp-content/uploads/2018/10/AdobeStock_78450089.jpeg') no-repeat 50% 50%;
     background-size: cover;
+    height: 299px;
+    width: 550px;
 }
 
 #shitenno {
-    background: url('https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2019/11/iStock-578827256.jpg' ) no-repeat 50% 50%;
+    background: url('https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2019/11/iStock-578827256.jpg' ) no-repeat;
     background-size: cover;
+   height: 299px;
+    width: 550px;
+ 
 
 }
 
 #chateau  {
-    background: url('https://previews.123rf.com/images/jikgoe/jikgoe1705/jikgoe170500090/77960786-le-ch%C3%A2teau-d-osaka-le-plus-c%C3%A9l%C3%A8bre-monument-historique-du-japon-%C3%A0-osaka-city-japon.jpg') no-repeat 50% 50%;
+    background: url('https://previews.123rf.com/images/jikgoe/jikgoe1705/jikgoe170500090/77960786-le-ch%C3%A2teau-d-osaka-le-plus-c%C3%A9l%C3%A8bre-monument-historique-du-japon-%C3%A0-osaka-city-japon.jpg') no-repeat;
     background-size: cover;
-
+    height: 299px;
+    width: 150%;
 }
 
-#tourisme li {
-    margin: 65px 100px 0 100px;
-    height: 226px;
-    width: 55%;
-   max-width: 150%;
-   float: left;
-   box-shadow: 4px 4px 0 1px rgb(0, 0, 0);
+.droite {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
+
+.gauche {
+  {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left
+  }
+}
+
+
 
 #tourisme p {
   height: 45px;
@@ -255,6 +271,9 @@ box-shadow: 1px 5px 21px 13px #000000;
   text-align: center;
   padding-top: 15px;
   box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
+  position: absolute;
+  left: 43%;
+
 
   
  
@@ -266,8 +285,12 @@ main {
 #bas {
   background-color: indigo;
 
+
 }
 
-#tourisme #chateau, #shitenno {
-  float: right;
+
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
 }
