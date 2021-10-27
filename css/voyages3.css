@@ -17,6 +17,7 @@
     position: sticky;
     top: 0;
     position: fixed;
+    /* position: absolute; */
     
   }
 
@@ -121,6 +122,7 @@
       font-family: 'advent pro', sans-serif;
       padding: 0;
       margin: 0;
+      
   }
 
   h2 {
@@ -155,6 +157,7 @@ h1 {
     color: #FFFFFF;
 text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
+
 h3 {
     text-align: center;
 margin-top: 2%;
@@ -171,10 +174,18 @@ text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff1
 .titre1 {
     background-color: blanchedalmond;
     padding: 1% 0 7% 0;
-}
+    background: url('https://photohito.com/uploads/photo58/user57680/4/5/450aa60bbd3562d675bf8db1083f60f1/450aa60bbd3562d675bf8db1083f60f1_m.jpg') no-repeat 50% 50%;
+background-size: cover;
+  }
 
 .textintro {
     padding: 0px 20%;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px 9px #000000; */
+        font-weight: bold;
+    opacity: 10;
+    font-size: 2em;
+text-shadow: 4px 2px 0 #0f0f0f;
 }
 
 #presentation {
@@ -183,6 +194,7 @@ text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff1
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4% 10%;
+ 
 }
 
 .image1 > h4 {
@@ -191,7 +203,9 @@ text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff1
     font-size: 1.9em;
     margin: 3%;
     font-weight: 300;
-    
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 2px 0 #0f0f0f;
     
 }
 
@@ -213,11 +227,12 @@ box-shadow: 1px 5px 21px 13px #000000;
 
 #tourisme {
     height: 1440%;
-    background-color: #f8f8f8;
     padding: 10px 2%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    background: url('https://d.wattpad.com/story_parts/749608572/images/15ab52c4e8cf59c5498577959175.jpg') no-repeat 50% 50%;
+    background-size: cover;
 }
 
 #miyajima {
@@ -240,23 +255,23 @@ box-shadow: 1px 5px 21px 13px #000000;
     background: url('https://previews.123rf.com/images/jikgoe/jikgoe1705/jikgoe170500090/77960786-le-ch%C3%A2teau-d-osaka-le-plus-c%C3%A9l%C3%A8bre-monument-historique-du-japon-%C3%A0-osaka-city-japon.jpg') no-repeat;
     background-size: cover;
     height: 299px;
-    width: 150%;
+    width: 550px;
 }
 
 .droite {
   display: flex;
   justify-content: flex-end;
-  position: relative;
+  /* position: relative; */
 }
 
 .gauche {
-  {
+  
     display: flex;
     justify-content: flex-start;
-    position: relative;
-    left
+    /* position: relative; */
+    
   }
-}
+
 
 
 
@@ -271,19 +286,17 @@ box-shadow: 1px 5px 21px 13px #000000;
   text-align: center;
   padding-top: 15px;
   box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
-  position: absolute;
-  left: 43%;
+  /* left: 43%; */
 
 
   
  
 }
 main {
-  background-color: mediumblue;
 }
 
 #bas {
-  background-color: indigo;
+  background-color: rgb(12, 11, 12);
 
 
 }
@@ -293,4 +306,19 @@ main {
 .formulaire {
   display: flex;
   flex-direction: column;
+}
+
+p.titrehaut {
+  left: 37%;
+position:absolute;
+}
+
+p.titrebas {
+  left: 37%;
+  position: absolute;
+}
+
+.titrecentre {
+  left: 38%;
+  position:absolute
 }
