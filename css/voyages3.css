@@ -286,22 +286,73 @@ box-shadow: 1px 5px 21px 13px #000000;
   text-align: center;
   padding-top: 15px;
   box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
-  /* left: 43%; */
-
-
   
+ }
+
+
+
+/* ......................................................FOOTER............................................. */
+#bas {
+  background: rgb(255, 0, 255);
+  flex-shrink: 0;
+  border-top: 1px dashed #000000;
+  color: #333;
+  width: 100%;
+  background: #f1f1f1;
+  margin: 0 auto;
+  display: block;
+  align-items: flex-start;
+  justify-content:space-between;
+  font-size: 50px 0 100px ;
+  
+}
+
+.contenubas {
+  display: flex;
+  flex-direction: column;
+  bottom: 3px;
+ 
  
 }
-main {
+
+.bloc {
+  width: 100%;
+  margin: 0 10%;
+  color: #000000;
+}
+/* contact */
+h4{
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.footer-contact p {
+padding-bottom:5px 0 ;
+}
+.footer-services {
+  font-size: 1em;
+display: block;
+justify-content: flex-start;
+margin: 0;
+width: 425px;
+ 
 }
 
-#bas {
-  background-color: rgb(12, 11, 12);
 
+.footer-agence {
+  font-size: 1em;
+  /* padding-bottom:10px ; */
+  }
 
+/* SERVICE */
+
+.liste-services,li {
+  padding: 2px 0;
 }
 
-
+.formform {
+  display: flex;
+  
+}
 
 .formulaire {
   display: flex;
@@ -321,4 +372,46 @@ p.titrebas {
 .titrecentre {
   left: 38%;
   position:absolute
+}
+
+#copyrighteticons {
+  display: flex;
+  bottom: 25%;
+  margin: 0;
+  padding: 10;
+}
+
+/* *************************************paragaphe touristique******************************************* */
+h5{
+  text-transform: uppercase;
+ right:50%;
+}
+
+.autourde {
+  border: 0px solid black ;
+  display: flex;
+  background-color: green;
+  padding: 10%;
+
+
+}
+.top1,
+.top2,
+.top3,
+.top4,
+.top5 {
+  border: solid 1px gray;
+  background-color: hotpink;
+  height: 100%;
+  
+
+}
+
+
+
+#deuxiemetrait {
+  border: solid 1px black;
+}
+#icons {
+  right: 25%;
 }
