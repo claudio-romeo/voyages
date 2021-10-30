@@ -406,7 +406,7 @@ h5{
 .top4,
 .top5 {
   border: solid 1px gray;
-  background-color: hotpink;
+  background-color: rgb(204, 190, 197);
   height: 100%;
   margin: 1%;
   border-radius: 34%;
@@ -421,18 +421,12 @@ h5{
   margin: auto;
 }
 
-.shira1 {
+.shira1, .kana1, .ine1 , .nara1 , .osaka1
+
+ {
   text-align: center;
-  font-size: 1.6m;
+  font-size: 1.6em;
 }
-
-
-.top2 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
 
 #deuxiemetrait {
   border: solid 1px black;
@@ -442,8 +436,8 @@ h5{
 }
 
 .vidjap {
-  width: 373;
-  height: 210;
+  width: 615px;
+  height: 350px;
   display: flex;
   justify-content: center;
   margin: auto;
