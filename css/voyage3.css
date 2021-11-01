@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* font-family: 'Quicksand', sans-serif; */
+/* ******************************************************************navbar commune******************************************** */
+
+:root{
+    --hauteur-menu: 60px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+  }
+  nav {
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    position: fixed;
+    /* position: absolute; */
+    z-index: 1;
+    
+  }
+
+  li {
+      list-style-type: none;
+  }
+  nav > ul {
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    height: var(--hauteur-menu);
+  }
+   
+  nav > ul > li{
+    list-style-type: none;
+  }
+  
+  nav > ul > li {
+    background-color: white;
+    position: relative;
+    height: 100%;
+    flex: 1;
+  }
+  nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+    background-color: rgb(156, 209, 245);
+    transition: 5s;
+  }
+  .sous-menu {
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+  }
+  
+  .sous-menu > li > a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+  nav > ul > li:hover > a{
+    color: #2169EC;
+  }
+  .sous-menu > li:hover {
+    background-color: rgba(33, 105, 236, 0.3);
+  }
+  
+  .sous-menu > li:hover > a {
+    color: white;
+  }
+  
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+  }
+  .menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+  }
+  @keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid #2169EC;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #2169EC;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+  }
+  .menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+  }
+
+  body {
+      font-family: 'advent pro', sans-serif;
+      padding: 0;
+      margin: 0;
+      
+  }
+
+  h2 {
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 3%;
+  }
+
+  /* ***************************************************image principal********************************* */
+
+.imageprincipale {
+    padding-top: 3%;
+    background: url('https://image.freepik.com/photos-gratuite/fleurs-cerisier-au-printemps-pagode-chureito-montagne-fuji-au-coucher-du-soleil-au-japon_335224-215.jpg') no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;  
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: rgb(207, 16, 41);
+    font-size: 6em;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff1818, 0 0 30px #ff1818, 0 0 40px #ff1818, 0 0 55px #ff1818, 0 0 75px #ff1818;
+}
+
+.premiertrait {
+    height: 1%;
+    width: 20%;
+    margin: 1% auto;
+    background-color: rgb(226, 226, 226);
+    color: #FFFFFF;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+h3 {
+    text-align: center;
+margin-top: 2%;
+font-size: 2em;
+font-family: 'Quicksand', sans-serif;
+    color: #FFFFFF;
+text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    
+
+}
+
+/* ****************************************************Presentation************************************************** */
+
+.titre1 {
+    background-color: blanchedalmond;
+    padding: 1% 0 7% 0;
+    background: url('https://photohito.com/uploads/photo58/user57680/4/5/450aa60bbd3562d675bf8db1083f60f1/450aa60bbd3562d675bf8db1083f60f1_m.jpg') no-repeat 50% 50%;
+background-size: cover;
+  }
+
+.textintro {
+    padding: 0px 20%;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px 9px #000000; */
+        font-weight: bold;
+    opacity: 10;
+    font-size: 2em;
+text-shadow: 4px 2px 0 #0f0f0f;
+}
+
+#presentation {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4% 10%;
+ 
+}
+
+.image1 > h4 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 1.9em;
+    margin: 3%;
+    font-weight: 300;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 2px 0 #0f0f0f;
+    
+}
+
+.image1 > img {
+    border: 1px solid gray;
+    border-radius: 10%;
+    -webkit-box-shadow: 1px 5px 21px 16px #000000; 
+box-shadow: 1px 5px 21px 13px #000000;
+
+}
+
+.image1> img:hover {
+    opacity: 1;
+    transform: scale(2.05);
+    transition: 0.6s ease-in-out;
+}
+
+/* ******************************************************TOURISME************************************************* */
+
+#tourisme {
+    height: 1440%;
+    padding: 10px 2%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background: url('https://d.wattpad.com/story_parts/749608572/images/15ab52c4e8cf59c5498577959175.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#miyajima {
+    background: url('https://www.sigarch.org/wp-content/uploads/2018/10/AdobeStock_78450089.jpeg') no-repeat 50% 50%;
+    background-size: cover;
+    height: 299px;
+    width: 550px;
+}
+
+#shitenno {
+    background: url('https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2019/11/iStock-578827256.jpg' ) no-repeat;
+    background-size: cover;
+   height: 299px;
+    width: 550px;
+ 
+
+}
+
+#chateau  {
+    background: url('https://previews.123rf.com/images/jikgoe/jikgoe1705/jikgoe170500090/77960786-le-ch%C3%A2teau-d-osaka-le-plus-c%C3%A9l%C3%A8bre-monument-historique-du-japon-%C3%A0-osaka-city-japon.jpg') no-repeat;
+    background-size: cover;
+    height: 299px;
+    width: 550px;
+}
+
+.droite {
+  display: flex;
+  justify-content: flex-end;
+  /* position: relative; */
+}
+
+.gauche {
+  
+    display: flex;
+    justify-content: flex-start;
+    /* position: relative; */
+    
+  }
+
+
+
+
+#tourisme p {
+  height: 45px;
+  width: 23%;
+  padding-top: 15px;
+  background-color: rgb(29, 187, 29);
+  float: right;
+  margin: 50px -180px 0 0;
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
+  
+ }
+
+
+
+/* ......................................................FOOTER............................................. */
+#bas {
+  background: rgb(255, 0, 255);
+  flex-shrink: 0;
+  border-top: 1px dashed #000000;
+  color: #333;
+  width: 100%;
+  background: #f1f1f1;
+  margin: 0 auto;
+  display: block;
+  align-items: flex-start;
+  justify-content:space-between;
+  font-size: 50px 0 100px ;
+  
+}
+
+.contenubas {
+  display: flex;
+  flex-direction: column;
+  bottom: 3px;
+ 
+ 
+}
+
+.bloc {
+  width: 100%;
+  margin: 0 10%;
+  color: #000000;
+}
+/* contact */
+h4{
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.footer-contact p {
+padding-bottom:5px 0 ;
+}
+.footer-services {
+  font-size: 1em;
+display: block;
+justify-content: flex-start;
+margin: 0;
+width: 425px;
+ 
+}
+
+
+.footer-agence {
+  font-size: 1em;
+  /* padding-bottom:10px ; */
+  }
+
+/* SERVICE */
+
+.liste-services,li {
+  padding: 2px 0;
+}
+
+.formform {
+  display: flex;
+  
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+p.titrehaut {
+  left: 37%;
+position:absolute;
+}
+
+p.titrebas {
+  left: 37%;
+  position: absolute;
+}
+
+.titrecentre {
+  left: 38%;
+  position:absolute
+}
+
+#copyrighteticons {
+  display: flex;
+  bottom: 25%;
+  margin: 0;
+  padding: 10;
+}
+
+/* *************************************paragaphe touristique******************************************* */
+h5{
+  text-transform: uppercase;
+ display: flex;
+ justify-content: center;
+ font-size: 2.8em;
+}
+
+.autourde {
+  border: 0px solid black ;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: green; */
+  padding: 1%;
+  margin: auto;
+  justify-content: space-around;
+
+}
+.top1,
+.top2,
+.top3,
+.top4,
+.top5 {
+  border: solid 1px gray;
+  background-color: rgb(204, 190, 197);
+  height: 100%;
+  margin: 1%;
+  border-radius: 34%;
+  padding: 4%;
+  box-shadow:  3px -1px 23px 17px rgba(0,0,0,0.84);
+  width: 30%;
+  font-weight: bold;
+  
+}
+
+.top5 {
+  margin: auto;
+}
+
+.shira1, .kana1, .ine1 , .nara1 , .osaka1
+
+ {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#deuxiemetrait {
+  border: solid 1px black;
+}
+#icons {
+  right: 25%;
+}
+
+.vidjap {
+  width: 615px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+/* **********************************************formulaire************************************************** */
+
+  
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.contien-contact {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+display: flex;
+justify-content: center; 
+text-align: center; 
+}
+
+h4.contcont {
+  margin: auto;
+  
+}
+
+
+/* ***********************logo********************* */
+
+.imagegit {
+margin-left: 170%;
+/* top: 150%; */
+}
+
